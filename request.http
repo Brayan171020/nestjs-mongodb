@@ -2,6 +2,26 @@ POST http://localhost:3000/todo HTTP/1.1
 Content-Type: application/json
 
 {
-    "title": 11,
+    "title": "Learn Nestjs",
     "description": "learn a project"
 }
+
+###
+
+PUT http://localhost:3000/todo/652f08bda2db4739842ce14b HTTP/1.1
+Content-Type: application/json
+
+{
+    "status": "IN_PROGRESS"
+}
+
+###
+
+GET http://localhost:3000/todo HTTP/1.1
+
+###
+GET http://localhost:3000/todo/652ef89b91dfe548697ef5df HTTP/1.1
+
+###
+
+DELETE http://localhost:3000/todo/652ef131786bf695b2e03901 HTTP/1.1
